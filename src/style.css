@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+
+    background-color: #e9edf6; 
+    /*min-height:400px;*/
+    margin: 0px;
+    
+    padding: 0px;
+    
+    font-family: "Karla", sans-serif;
+
+}
+
+main{
+    width : 100vh;
+    height: 110vh;
+    color: #2E2787; 
+    padding:0px;
+    margin:0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+hr{
+    border: 0.5px solid lightgray;
+}
+
+.startPage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    text-align: center;
+}
+
+.quizPage{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    text-align: center;
+    height: 100vh;
+}
+.summary{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+.summaryP{
+    padding:10px;
+    margin-right: 10px;
+    font-size: large;
+    font-weight: bold;
+}
+.playAgainButton{
+    padding:10px;
+    margin-left: 10px;
+    margin-bottom:20px;
+}
+
+.startButton{
+    background-color:#5035FF;
+    color: #FFFFFF;
+    width:8em;
+    height:2em;
+    font-family:Karla;
+    font-size:25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+
+}
+
+.chckAnswersBttn{
+    background-color:#5035FF;
+    color: #FFFFFF;  
+    font-family:Karla;
+    font-size:15px;
+    border-radius: 10px;
+    margin-top: 20px;
+    height: 40px;
+    width: 130px;
+
+}
+
+.buttonLayout{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+        
+}
+
+.answerButtonStyle{
+    margin-left: 20px;
+    margin-right: 20px; 
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.selectButtonStyle{
+    background-color: #CCCCFF;
+    border: none;
+}
+
+.correctAnswerStyle{
+    background-color: #3cb371;
+    border: none;
+}
+
+.wrongAnswerStyle{
+    background-color: #ff9999;
+    border: none;    
+}
+
+
+
