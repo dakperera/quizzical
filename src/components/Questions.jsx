@@ -29,11 +29,11 @@ export default function Questions(props){
     
 /*select the color class for the buttons */
     const selectClass = (index) => {
-        let theClass = "answerButtonStyle"
+        let theClass = "answerDivStyle"
 
         if(!checkAnswers){
             if(index==selectedAnswer){
-                theClass += " selectButtonStyle"
+                theClass += " selectAnswerStyle"
             }
         }
         else{
@@ -62,7 +62,7 @@ export default function Questions(props){
         <div >
 
             <h3>{question}</h3>
-            <div className="buttonLayout" >
+            <div className="answerDivLayout" >
                 {buttonDisplay}
             </div>
             <hr></hr>

@@ -5,11 +5,8 @@
 body {
 
     background-color: #e9edf6; 
-    /*min-height:400px;*/
     margin: 0px;
-    
     padding: 0px;
-    
     font-family: "Karla", sans-serif;
 
 }
@@ -28,6 +25,21 @@ main{
 
 hr{
     border: 0.5px solid lightgray;
+}
+
+select{
+    font-size: 15px;
+    margin-bottom: 2em;
+    margin-top: 0.7em;
+    padding: 5px;
+}
+
+.form{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+    
 }
 
 .startPage{
@@ -53,7 +65,6 @@ hr{
     align-items: center;
     justify-content: center;
     
-    
 }
 .summaryP{
     padding:10px;
@@ -61,30 +72,24 @@ hr{
     font-size: large;
     font-weight: bold;
 }
-.playAgainButton{
-    padding:10px;
-    margin-left: 10px;
-    margin-bottom:20px;
+.paramsP{
+    width: 35em;
+    font-size: 17px;
+    font-weight: 600;
+    margin-top: 3em;
 }
 
 .startButton{
-    background-color:#5035FF;
-    color: #FFFFFF;
     width:8em;
     height:2em;
-    font-family:Karla;
     font-size:25px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-
 }
 
 .chckAnswersBttn{
-    background-color:#5035FF;
-    color: #FFFFFF;  
-    font-family:Karla;
     font-size:15px;
     border-radius: 10px;
     margin-top: 20px;
@@ -93,14 +98,43 @@ hr{
 
 }
 
-.buttonLayout{
+.playAgainButton{
+    padding:10px;
+    margin-left: 10px;
+    margin-bottom:20px;
+    font-size:15px;
+    border-radius: 10px;
+    margin-top: 20px;
+    height: 40px;
+    width: 130px;
+}
+
+.resetParamsBttn{
+    font-size:15px;
+    border-radius: 10px;
+    margin-top: 20px;
+    height: 40px;
+    width: 150px;  
+    padding:8px;
+    margin-left: 10px;
+    margin-bottom:20px;  
+}
+
+.buttonStyle{
+    background-color:#5035FF;
+    color: #FFFFFF;  
+    font-family:Karla;
+    cursor: pointer;    
+}
+
+.answerDivLayout{
     display: flex;
     flex-direction: row;
     justify-content: center;
         
 }
 
-.answerButtonStyle{
+.answerDivStyle{
     margin-left: 20px;
     margin-right: 20px; 
     margin-top: 20px;
@@ -110,7 +144,7 @@ hr{
     border-radius: 10px;
 }
 
-.selectButtonStyle{
+.selectAnswerStyle{
     background-color: #CCCCFF;
     border: none;
 }

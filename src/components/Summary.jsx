@@ -2,9 +2,9 @@ import React from "react"
 
 export default function Summary(props){
 
-    const {restartQuiz, checkQuiz, totalCorctAnsrs, clearTotalCorAnswers} = props;
+    const {restartQuiz, checkQuiz, resetQuiz, totalCorctAnsrs, clearTotalCorAnswers} = props;
 
-    const clickHandler = () => {
+    const newGameSameParams = () => {
         restartQuiz()
         checkQuiz()
         clearTotalCorAnswers()
@@ -13,7 +13,8 @@ export default function Summary(props){
     return(
         <div className='summary'>
             <p className='summaryP'>You scored {totalCorctAnsrs}/5 correct answers</p>
-            <button className="chckAnswersBttn playAgainButton" onClick={clickHandler} >Play Again</button>
+            <button className="playAgainButton buttonStyle" onClick={newGameSameParams} >Play Again</button>
+            <button className="resetParamsBttn buttonStyle" onClick={resetQuiz}>Reset Params & Play</button>
         </div>
     )
 }
