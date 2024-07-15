@@ -5,6 +5,7 @@ import {nanoid} from "nanoid"
 
 
 export default function QuizPage(props){  
+    const {resetQuiz, urlParams} = props;
 
     const [quizData, setQuizData] = React.useState([]);
     const [sections, setSections] = React.useState([])
@@ -25,7 +26,7 @@ export default function QuizPage(props){
     by Summary, to play the quiz again with the same parameters.
     */
     React.useEffect(() => {
-        fetch(props.urlParams)
+        fetch(urlParams)
           .then(res => res.json())
           .then(data => {
             setQuizData(data.results);  
@@ -124,12 +125,12 @@ export default function QuizPage(props){
             sections.length > 0 && (
                 !checkAnswers ? <button className="chckAnswersBttn buttonStyle" onClick={checkQuiz}>Check Answers</button>
                 :
-                <Summary restartQuiz={restartQuiz} checkQuiz={checkQuiz} resetQuiz={props.resetQuiz} totalCorctAnsrs={totalCorctAnsrs} clearTotalCorAnswers={clearTotalCorAnswers}/>
+                <Summary restartQuiz={restartQuiz} checkQuiz={checkQuiz} resetQuiz={resetQuiz} totalCorctAnsrs={totalCorctAnsrs} clearTotalCorAnswers={clearTotalCorAnswers}/>
             )
         }
 
       </main>
     )
-  }
+}
 
   

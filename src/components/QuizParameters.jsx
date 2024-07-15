@@ -115,7 +115,7 @@ export default function QuizParameters(){
                     </select>
 
                     <button className="startButton buttonStyle" onClick={playQuiz}>Play the Quiz!</button> 
-                    <p className='paramsP'>Note: If database doesn't have enough questions that match the chosen parameters, resultying screen will be blank. In that case refresh browser, and choose new parameters.</p>
+                    <p className='paramsP'>Note: If database doesn't have enough questions that match the chosen parameters, resulting screen will be blank. In that case refresh browser, and choose new parameters.</p>
 
                 </div>
        
